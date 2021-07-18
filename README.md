@@ -46,3 +46,7 @@ drwx------  5 root root 4.0K Jun  9 12:11 root
 drwxr-xr-x 10 root root 4.0K Jun 22 16:35 ..
 drwxr-xr-x 21 root root 4.0K Jun 22 19:00 .
 ```
+
+# Requirements
+- jq
+- curl
