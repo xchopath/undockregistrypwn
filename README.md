@@ -2,7 +2,7 @@
 Docker filesystem extractor via BLOB files through Unauthenticated Docker Registry.
 
 ```
-root@lab:~# bash dumper.sh http://privdocker.reg:5000
+root@lab:~# bash dockrdumpr.sh http://privdocker.reg:5000
  -------------------
  | UNAUTHENTICATED |
  | DOCKER REGISTRY |
