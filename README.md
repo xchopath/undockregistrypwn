@@ -1,5 +1,5 @@
-# docker-registry-blobdumper
-Dump and extract BLOB files of unauthenticated docker registry to filesystem format
+# dockrdumpr
+Docker filesystem extractor via BLOB files through Unauthenticated Docker Registry.
 
 ```
 root@lab:~# bash dumper.sh http://privdocker.reg:5000
