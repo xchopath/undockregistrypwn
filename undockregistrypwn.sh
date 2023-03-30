@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # If you found an Unauthenticated Docker Registry, you can dump the repos using this script
 # This script will download blob per blob and automatically enumerate all repos through /v2/_catalog
 # And the blobs automatically extracted to be linux file system/file
