@@ -30,7 +30,7 @@ root@lab:~# bash undockregistrypwn.sh http://privdocker.reg:5000
 
  OK: DOCKER_REG_URL: http://privdocker.reg:5000
 
- * Dump starting: prod-app
+ * Dump started: prod-app
  --- BLOB: sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4
  --- BLOB: sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4
  --- BLOB: sha256:7930823325656499d9b027860e1befe1489f55455e0449ddc2422ad71682d126
