@@ -1,6 +1,6 @@
 # undockregistrypwn
 
-Unauthenticated Docker Registry filesystem (BLOB files) dumper tool.
+Unauthenticated Docker Registry filesystem (BLOB files) dumper.
 
 ### Requirements
 
